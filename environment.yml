@@ -1,0 +1,30 @@
+name: rps-gmm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  # Pinned: GaussianMixture depends on k-means initialization, whose behavior
+  # has changed across scikit-learn releases.
+  - numpy=1.26.4
+  - scipy=1.13.0
+  - scikit-learn=1.4.2
+  - pandas>=2.0,<3.0
+  - joblib>=1.3
+  - matplotlib>=3.7
+  - seaborn>=0.13
+  # Preprocessing from the raw Zenodo archives.
+  - xarray>=2023.6
+  - netcdf4>=1.6
+  - geopandas>=0.13
+  - requests>=2.31
+  # Notebook execution.
+  - jupyter>=1.0
+  - ipykernel>=6.25
+  - pip
+  - pip:
+      # Baselines only. sktime pins an older scikit-learn than the solver above
+      # selects; if this conflicts, create the separate environment described in
+      # the README under "Reproducing the baselines".
+      - sktime==0.30.1
+      - dtaidistance>=2.3
+      - tensorflow>=2.13,<2.16

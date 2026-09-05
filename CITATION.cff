@@ -1,0 +1,110 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, please cite the paper below."
+title: "RPS-GMM: Time Series Classification of Supraglacial Lakes Evolution over Greenland Ice Sheet"
+abstract: >-
+  Reference implementation of a computationally efficient time series
+  classification approach that fits Gaussian Mixture Models to the Reconstructed
+  Phase Spaces of Sentinel-1 backscatter and Sentinel-2 water percentage time
+  series, classifying Greenland supraglacial lakes as refreezing, draining, or
+  buried from a single representative training sample per class.
+type: software
+license: GPL-3.0-or-later
+repository-code: "https://github.com/ehfahad/TSC-of-Supraglacial-Lakes-Evolution-over-GrIS"
+version: "1.0.0"
+keywords:
+  - time series classification
+  - reconstructed phase space
+  - Gaussian mixture model
+  - supraglacial lakes
+  - Greenland Ice Sheet
+  - Sentinel-1
+  - Sentinel-2
+  - remote sensing
+
+authors:
+  - family-names: Hossain
+    given-names: Emam
+    affiliation: "Department of Information Systems, University of Maryland, Baltimore County"
+    email: emamh1@umbc.edu
+  - family-names: Gani
+    given-names: "Md Osman"
+    affiliation: "Department of Information Systems, University of Maryland, Baltimore County"
+    email: mogani@umbc.edu
+  - family-names: Dunmire
+    given-names: Devon
+    affiliation: "Department of Earth and Environmental Sciences, KU Leuven, Belgium"
+    email: devon.dunmire@kuleuven.be
+  - family-names: Subramanian
+    given-names: "Aneesh C."
+    affiliation: "Department of Atmospheric and Oceanic Sciences, University of Colorado, Boulder"
+    email: aneeshcs@colorado.edu
+  - family-names: Younas
+    given-names: Hammad
+    affiliation: "St. John's School, Houston, USA"
+    email: hammadyounas27@icloud.com
+
+preferred-citation:
+  type: conference-paper
+  title: "Time Series Classification of Supraglacial Lakes Evolution over Greenland Ice Sheet"
+  collection-title: "2024 International Conference on Machine Learning and Applications (ICMLA)"
+  publisher:
+    name: IEEE
+  year: 2024
+  month: 12
+  start: 490
+  end: 497
+  doi: "10.1109/ICMLA61862.2024.00072"
+  isbn: "979-8-3503-7488-9"
+  authors:
+    - family-names: Hossain
+      given-names: Emam
+    - family-names: Gani
+      given-names: "Md Osman"
+    - family-names: Dunmire
+      given-names: Devon
+    - family-names: Subramanian
+      given-names: "Aneesh C."
+    - family-names: Younas
+      given-names: Hammad
+
+references:
+  - type: data
+    title: >-
+      Data and Code for: "Greenland Ice Sheet wide supraglacial lake evolution
+      and dynamics: insights from the 2018 and 2019 melt seasons"
+    doi: "10.5281/zenodo.14587026"
+    year: 2025
+    license: CC-BY-4.0
+    authors:
+      - family-names: Dunmire
+        given-names: Devon
+      - family-names: Subramanian
+        given-names: Aneesh
+      - family-names: Hossain
+        given-names: Emam
+      - family-names: Gani
+        given-names: "Md Osman"
+      - family-names: Banwell
+        given-names: Alison
+      - family-names: Younas
+        given-names: Hammad
+      - family-names: Myers
+        given-names: Brendan
+  - type: data
+    title: >-
+      Contrasting regional variability of buried meltwater extent over two years
+      across the Greenland Ice Sheet - data
+    doi: "10.5281/zenodo.4813833"
+    year: 2021
+    license: CC-BY-4.0
+    authors:
+      - family-names: Dunmire
+        given-names: Devon
+      - family-names: Banwell
+        given-names: "Alison F."
+      - family-names: Wever
+        given-names: Nander
+      - family-names: Lenaerts
+        given-names: "Jan T. M."
+      - family-names: Datta
+        given-names: "Rajashree Tri"
