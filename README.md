@@ -13,8 +13,8 @@ Applications (ICMLA).
 Emam Hossain, Md Osman Gani, Devon Dunmire, Aneesh C. Subramanian, Hammad Younas
 
 Canonical repository:
-[github.com/ehfahad/TSC-of-Supraglacial-Lakes-Evolution-over-GrIS](https://github.com/ehfahad/TSC-of-Supraglacial-Lakes-Evolution-over-GrIS)
-— the URL cited in the paper. A mirror is maintained by
+[github.com/ehfahad/TSC-of-Supraglacial-Lakes-Evolution-over-GrIS](https://github.com/ehfahad/TSC-of-Supraglacial-Lakes-Evolution-over-GrIS).
+This is the URL cited in the paper. A mirror is maintained by
 [iHARP](https://github.com/iharp-institute).
 
 ---
@@ -36,8 +36,8 @@ trajectory in a Reconstructed Phase Space (RPS) and fitting one Gaussian Mixture
 Model (GMM) per class. A lake is assigned to the class whose GMM gives its
 trajectory the highest likelihood.
 
-The method trains on **one representative lake per class** — three trajectories
-in total — where the deep learning baselines it is compared against each see
+The method trains on **one representative lake per class**, three trajectories
+in total, where the deep learning baselines it is compared against each see
 about 622 lakes per fold.
 
 <p align="center">
@@ -116,7 +116,7 @@ Conda users: `conda env create -f environment.yml && conda activate rps-gmm`
 
 ## Data
 
-777 manually labeled supraglacial lakes — 189 refreeze, 392 drain, 196 buried —
+777 manually labeled supraglacial lakes (189 refreeze, 392 drain, 196 buried)
 across all six GrIS subregions.
 
 Everything needed to run the experiments is in `data/processed/` and tracked in
@@ -154,13 +154,13 @@ into `results/`.
 
 `--n-jobs` changes only the wall time. Every combination is fitted
 independently under a fixed `random_state`, so the grid is identical at any
-setting — a test enforces this.
+setting. A test enforces this.
 
 Of the 812 pairs in the search space, 464 are usable. A delay vector spans
 $(d-1)\tau$ days, so from the 244-day melt-season window only
 $L = 244 - (d-1)\tau$ vectors can be formed, and a 10-component GMM needs at
 least 10 of them. The remaining combinations cannot be constructed and are
-skipped — they are the white region in the grid heat map.
+skipped. They form the white region in the grid heat map.
 
 ### Baselines
 
@@ -267,7 +267,7 @@ Please also cite the dataset:
 ## License
 
 Code is licensed under [GPL-3.0](LICENSE). Data is licensed separately under
-CC BY 4.0 — see [DATA_LICENSE.md](DATA_LICENSE.md) for terms and attribution.
+CC BY 4.0. See [DATA_LICENSE.md](DATA_LICENSE.md) for terms and attribution.
 
 ## Acknowledgement
 

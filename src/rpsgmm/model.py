@@ -3,7 +3,7 @@
 One Gaussian Mixture Model is fitted per class over the Reconstructed Phase
 Space of that class's representative sample (paper, Section 4.2). A test lake is
 assigned to the class whose GMM gives its trajectory the highest total
-log-likelihood -- the Bayesian maximum-likelihood rule of Section 3.3:
+log-likelihood, following the Bayesian maximum-likelihood rule of Section 3.3:
 
 .. math::
 
@@ -178,8 +178,8 @@ class RPSGMMClassifier:
 
         Every sample is embedded once and all trajectories are scored in a
         single call per class, then averaged per sample. This is numerically
-        identical to scoring each lake separately -- ``GaussianMixture.score``
-        is the mean of ``score_samples`` -- but avoids one Python-level call
+        identical to scoring each lake separately, since ``GaussianMixture.score``
+        is the mean of ``score_samples``, but it avoids one Python-level call
         per lake per class, which dominates the grid search.
         """
         if not self.gmms_:

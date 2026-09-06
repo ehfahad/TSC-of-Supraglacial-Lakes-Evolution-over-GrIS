@@ -67,7 +67,7 @@ the paper.
 
 | Stage | Lakes | Column | How |
 | --- | --- | --- | --- |
-| Labeled | 1,000 | — | manual labeling of all six GrIS subregions, 250 per class |
+| Labeled | 1,000 | n/a | manual labeling of all six GrIS subregions, 250 per class |
 | Visual QC | 793 | `in_visual_qc` | manual review of each lake's plotted time series |
 | Final | 777 | `in_final_777` | evaluation set reported in the paper |
 
@@ -83,7 +83,7 @@ the paper.
 
 ## File schema
 
-**`*_777.csv` and `*_representative.csv`** — one lake per row.
+**`*_777.csv` and `*_representative.csv`**: one lake per row.
 
 | Column | Description |
 | --- | --- |
@@ -94,16 +94,16 @@ the paper.
 
 Days are day-of-year. Values are linearly interpolated between satellite
 observations, and $HV_{anom}$ carries a 12-day smoothing filter (paper,
-Section 4.1). The experiments use days 121–364, the melt-season window.
+Section 4.1). The experiments use days 121 to 364, the melt-season window.
 
 > **Row order.** `backscatter_777.csv` and `backscatter_water_777.csv` hold the
 > same 777 lakes with the same labels and identical backscatter values, but the
 > rows are in different orders. Each file is internally consistent, so this
 > affects nothing as long as you read `ids`, the series, and `label` from the
-> same file — which `rpsgmm.data` does. Join on `ids` if you need to combine
+> same file, which `rpsgmm.data` does. Join on `ids` if you need to combine
 > them.
 
-**`lake_manifest.csv`** — `ids`, `region`, `year`, `area_m2`, `elevation_m`,
+**`lake_manifest.csv`**: `ids`, `region`, `year`, `area_m2`, `elevation_m`,
 `label_4class`, `label_3class`, `in_visual_qc`, `in_final_777`.
 
 ## Citation

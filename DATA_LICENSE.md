@@ -33,9 +33,9 @@ the authors of the ICMLA 2024 paper this repository accompanies.
 
 `data/download_data.py` retrieves `all_lakes_2019.nc` and `all_training.geojson`
 from Zenodo record [10.5281/zenodo.14587026](https://doi.org/10.5281/zenodo.14587026).
-Those files are **not** redistributed here — `all_lakes_2019.nc` is 280 MB,
-above GitHub's file size limit — and remain under the CC BY 4.0 license of that
-record.
+Those files are **not** redistributed here, because `all_lakes_2019.nc` is
+280 MB and exceeds GitHub's file size limit. They remain under the CC BY 4.0
+license of that record.
 
 ## 3. Upstream lake outlines
 

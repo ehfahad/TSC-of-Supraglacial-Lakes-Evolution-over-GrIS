@@ -2,10 +2,10 @@
 
 Produces, for each feature set:
 
-- ``representative_trajectories_<features>.png`` -- the three training lakes
-- ``phase_spaces_<features>.png`` -- their reconstructed phase spaces
-- ``confusion_matrix_<features>.png`` -- evaluation over all 777 lakes
-- ``grid_search_<features>.png`` -- accuracy across the (tau, d) plane, written
+- ``representative_trajectories_<features>.png``: the three training lakes
+- ``phase_spaces_<features>.png``: their reconstructed phase spaces
+- ``confusion_matrix_<features>.png``: evaluation over all 777 lakes
+- ``grid_search_<features>.png``: accuracy across the (tau, d) plane, written
   only when a grid search has been run and saved to ``results/``
 
 The classifier is fitted here, so no prior run is required. Pass ``--tau`` and
