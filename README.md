@@ -14,8 +14,8 @@ Emam Hossain, Md Osman Gani, Devon Dunmire, Aneesh C. Subramanian, Hammad Younas
 
 Canonical repository:
 [github.com/ehfahad/TSC-of-Supraglacial-Lakes-Evolution-over-GrIS](https://github.com/ehfahad/TSC-of-Supraglacial-Lakes-Evolution-over-GrIS).
-This is the URL cited in the paper. A mirror is maintained by
-[iHARP](https://github.com/iharp-institute).
+This is the URL cited in the paper. A mirror is maintained by iHARP at
+[iharp-institute/Time-Series-Classification-of-Supraglacial-Lakes-Evolution-over-Greenland-Ice-Sheet](https://github.com/iharp-institute/Time-Series-Classification-of-Supraglacial-Lakes-Evolution-over-Greenland-Ice-Sheet).
 
 ---
 
